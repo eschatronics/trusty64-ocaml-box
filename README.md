@@ -3,6 +3,14 @@ OCaml Development Box
 
 This Vargrantfile sets up a box for OCaml development.
 
+How To
+------
+
+1. git clone https://github.com/dtoma/trusty64-ocaml-box.git
+2. cd trusty64-ocaml-box
+3. vagrant up
+4. Profit!
+
 OS
 --
 
@@ -11,9 +19,9 @@ OS
 OCaml
 -----
 
-[OPAM](http://opam.ocaml.org) (OCaml Package Manager)
-[OCaml](http://ocaml.org)
-[utop](https://github.com/diml/utop) (a universal toplevel for OCaml)
+* [OPAM](http://opam.ocaml.org) (OCaml Package Manager)
+* [OCaml](http://ocaml.org)
+* [utop](https://github.com/diml/utop) (a universal toplevel for OCaml)
 
 Editor
 ------
@@ -24,3 +32,6 @@ Misc
 ----
 
 [Git](http://git-scm.com)
+
+
+Have fun!

@@ -5,17 +5,17 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
+  config.vm.define :ocaml_dev do |c| end
+
   config.vm.provider "virtualbox" do |vb|
-    vb.customize ["modifyvm", :id, "--memory", "2048"]
+    vb.memory = 1024
+    vb.cpus = 2
+    vb.name = "ocaml_dev"
   end
 
   config.vm.box = "ubuntu/trusty64"
 
-  config.vm.provision "ansible" do |ansible|
-    ansible.playbook = "playbook.yml"
-    ansible.sudo = true
-    ansible.verbose = 'vv'
-  end
+  config.vm.provision "shell", path: "install.sh"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
