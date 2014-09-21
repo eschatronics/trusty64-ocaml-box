@@ -5,6 +5,15 @@ OCaml Development Box
 
 > _**Setup your OCaml development environment in a matter of minutes.**_
 
+Use Vagrant to set up a virtual machine with everything you need to develop using the [OCaml](http://ocaml.org) language.
+All you have to do is copy-paste a few commands detailed below and you'll be ready to go.
+
+Requirements
+------------
+
+* [VirtualBox](https://www.virtualbox.org)
+* [Vagrant](https://www.vagrantup.com)
+
 How To
 ------
 
