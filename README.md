@@ -17,16 +17,15 @@ Requirements
 How To
 ------
 
-1. git clone https://github.com/dtoma/trusty64-ocaml-box.git
-2. cd trusty64-ocaml-box
+1. git clone https://github.com/dtoma/xenial64-ocaml-bap-box.git
+2. cd xenial64-ocaml-bap-box
 3. vagrant up (*create the virtual machine from the Vagrantfile*)
 4. vagrant ssh (*connect to the virtual machine*)
-5. sh /vagrant/install.sh (*install additional packages, setup .emacs*)
 
 OS
 --
 
-[Ubuntu 14.04.1 LTS](http://releases.ubuntu.com/14.04/) (Trusty Tahr) - 64 bits.
+[Ubuntu 16.04.1 LTS](http://releases.ubuntu.com/16.04/) (Xenial Xerus) - 64 bits.
 
 OCaml
 -----
@@ -34,13 +33,13 @@ OCaml
 * [OCaml](http://ocaml.org)
 * [OPAM](http://opam.ocaml.org) (OCaml Package Manager)
 * [utop](https://github.com/diml/utop) (a universal toplevel for OCaml)
+* [bap](https://github.com/BinaryAnalysisPlatform/bap) (Binary Analysis Platform)
 
 Editor
 ------
 
 * [Emacs 24](http://www.gnu.org/software/emacs/)
-* [Tuareg](https://github.com/ocaml/tuareg) (an Emacs OCaml mode)
-* [Merlin](https://github.com/the-lambda-church/merlin) (Context sensitive completion for OCaml in Vim and Emacs)
+* [Spacemacs](https://github.com/syl20bnr/spacemacs) 
 
 Misc
 ----
@@ -55,4 +54,7 @@ Thanks
 This is a good read even if you use this box to setup your development environment,
 in order to understand how OCaml is installed.
 
+[BAP Blog](https://binaryanalysisplatform.github.io/) 
+
+Full of useful information.
 Have fun!
