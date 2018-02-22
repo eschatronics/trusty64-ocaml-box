@@ -1,5 +1,5 @@
-OCaml Development Box
-=====================
+OCaml/BAP Development Box
+=========================
 
 [![ocaml](colour-logo.png)](http://ocaml.org)
 
