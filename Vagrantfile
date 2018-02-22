@@ -8,12 +8,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define :ocaml_dev do |c| end
 
   config.vm.provider "virtualbox" do |vb|
-    vb.memory = 1024
+    vb.memory = 4096
     vb.cpus = 2
     vb.name = "ocaml_dev"
   end
 
-  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "ubuntu/xenial64"
 
   config.vm.provision "shell", path: "provision.sh"
 
@@ -24,5 +24,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  # config.vm.network "private_network", ip: "192.168.33.10"
+  config.vm.network "private_network", ip: "192.168.33.33"
 end
